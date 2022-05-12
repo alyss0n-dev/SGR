@@ -3,7 +3,6 @@
 namespace App\Entity;
 
 use \App\Db\Database;
-
 use \PDO;
 
 class ramal {
@@ -38,5 +37,17 @@ class ramal {
                             ]);
         //RETORNAR SUCESSO
         return true;
+    }
+    
+    /**
+     * Método responsável por obter os ramais do BD
+     * @param string
+     * @param string
+     * @param string
+     * @return array
+     */
+    public function getRamal($where = null, $order = null, $limit = null){
+        return (new Database('vagas'))->select($where,$order,$limit)
+                                      ->fetchAll(PDO::FETCH_CLASS,self::class);
     }
 }
