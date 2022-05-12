@@ -11,8 +11,8 @@ if(isset($_POST['num_ramal'],$_POST['loc_ramal'])){
     $obRamal->loc_ramal = $_POST['loc_ramal'];
     $obRamal->cadastrar();
 
-    // header ('location: index.php?status=sucess');
-    // exit;
+    header ('location: index.php?status=sucess');
+    exit;
   }
 
 include __DIR__.'/includes/header.php';
