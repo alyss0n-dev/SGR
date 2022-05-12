@@ -1,16 +1,16 @@
 <main>
-<h2 class="mt-3"></h2>
+<h2 class="mt-3"><?=TITLE?></h2>
 
 <form method="post">
 
   <div class="form-group">
     <label>Número</label>
-    <input type="text" class="form-control" name="num_ramal" value="">
+    <input type="text" class="form-control" name="num_ramal" value="<?=$obRamal->num_ramal?>">
   </div>
 
   <div class="form-group">
     <label>Localização</label>
-    <textarea class="form-control" name="loc_ramal" rows="5"></textarea>
+    <input type="text" class="form-control" name="loc_ramal" value="<?=$obRamal->loc_ramal?>">
   </div>
 
    <div class="form-group">

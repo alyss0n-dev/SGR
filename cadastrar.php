@@ -2,6 +2,8 @@
 
 require __DIR__.'/vendor/autoload.php';
 
+define('TITLE','Cadastrar Ramal');
+
 use \App\Entity\Ramal;
 
 if(isset($_POST['num_ramal'],$_POST['loc_ramal'])){
