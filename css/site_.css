@@ -1,12 +1,22 @@
-*{
-    font-family:;
+header {
+    display: flex;
+    flex-direction: row;
+    border: 1px dashed green;
 }
 
-header {
-    display: flexbox;
-    border: 1px dashed green;
+header img {
+    display: block;
+    width: 315px;
+    height: 120px;
 }
 
 header div#title_string {
     border-left: 1px solid black;
+}
+
+nav ul#menu_pag {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid pink;
+    justify-content: flex-start;
 }
