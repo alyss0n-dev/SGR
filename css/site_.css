@@ -1,3 +1,13 @@
+@media(min-width: 972px){
+    header img {
+        border-right: none;
+    }
+}
+
+*{
+    margin: 0px;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -5,15 +15,8 @@ header {
     align-self: center;
 }
 
-header div img {
-    display: block;
-    margin: 0px auto;
-    width: 315px;
-    height: 120px;
-}
-
-header div#title_string {
-    border-left: 1px solid black;
+header img{
+    border-right: 3px solid black;
 }
 
 header div#title_string h1{
@@ -27,8 +30,40 @@ nav ul#menu_pag {
     background-color: #6a5345;
     color: white;
     justify-content: flex-start;
+    margin: 0px;
 }
 
 nav ul li {
     padding: 10px 25px 10px 0px;
+}
+
+section {
+    text-align: center;
+}
+
+section h2 {
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+section table {
+    /*display: grid;*/
+    grid-template-columns: 200px;
+    grid-template-rows: auto;
+    border: 2px solid black;
+    /*margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;*/ 
+}
+
+section table tr{
+    width: 100%;
+    border: 1px solid red;
+
+}
+
+section table tr td{
+    margin: 0px auto;
+    padding:0px 100px;
 }
