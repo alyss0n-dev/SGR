@@ -1,0 +1,12 @@
+*{
+    font-family:;
+}
+
+header {
+    display: flexbox;
+    border: 1px dashed green;
+}
+
+header div#title_string {
+    border-left: 1px solid black;
+}
