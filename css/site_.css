@@ -1,11 +1,13 @@
 header {
     display: flex;
     flex-direction: row;
-    border: 1px dashed green;
+    flex-wrap: wrap;
+    align-self: center;
 }
 
-header img {
+header div img {
     display: block;
+    margin: 0px auto;
     width: 315px;
     height: 120px;
 }
@@ -14,9 +16,19 @@ header div#title_string {
     border-left: 1px solid black;
 }
 
+header div#title_string h1{
+    margin: 50px 20px;
+}
+
 nav ul#menu_pag {
+    list-style: none;
     display: flex;
     flex-direction: row;
-    border: 1px solid pink;
+    background-color: #6a5345;
+    color: white;
     justify-content: flex-start;
+}
+
+nav ul li {
+    padding: 10px 25px 10px 0px;
 }
