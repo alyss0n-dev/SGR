@@ -1,0 +1,39 @@
+section {
+    text-align: center;
+}
+
+section h2 {
+    font-size: 30pt;
+    text-align: justify;
+    padding-left: 50pt;
+    padding-top: 30pt;
+    padding-bottom: 10pt;
+}
+
+section h2 span{
+    border-bottom: 10px solid orange;
+    padding-bottom: 5px;
+}
+
+section table {
+    display: grid;
+}
+
+section table tr {
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+}
+
+section table tr#title_table{
+    color: black;
+    background-color: gray;
+    font-weight: bold;
+}
+
+section table tr td{
+    background-color: none;
+}

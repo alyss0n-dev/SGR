@@ -1,0 +1,86 @@
+/*Só para dividir o header e o footer que vão se repetir em todas as páginas da prefeitura do restante do .css da página*/
+
+*{
+    margin: 0px;
+}
+
+/*Esse é o header*/
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header img{
+    border-right: 3px solid black;
+    padding: 20px 0px
+}
+
+header div#title_string h1{
+    margin: 60px 0px 10px 20px;
+}
+
+nav ul#menu_pag {
+    list-style: none;
+    border-bottom: 15px solid orange;
+    display: flex;
+    flex-direction: row;
+    background-color: #6a5345;
+    color: white;
+    justify-content: flex-start;
+    margin: 0px;
+    height: 40px;
+    padding-bottom: 40px;
+}
+
+nav ul li {
+    padding: 10px 25px 10px 0px;
+}
+
+/*------------------------------------------------------*/
+
+/*Esse é o footer*/
+
+footer{
+    border-top: 5px solid orange;
+}
+
+footer ul#infos{
+    padding: 30px;
+    list-style: none;
+    background-color: #6a5345;
+    color: white;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: 1fr 23fr 30fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+footer ul#infos i {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+footer ul#infos li#l1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+footer ul#infos li#l2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+footer ul#infos li#l3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/*------------------------------------------------------*/
