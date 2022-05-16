@@ -13,11 +13,13 @@ header {
 
 header img{
     border-right: 3px solid black;
-    padding: 20px 0px
+    padding: 20px 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 header div#title_string h1{
-    margin: 60px 0px 10px 20px;
+    margin: 80px 0px 10px 20px;
 }
 
 nav ul#menu_pag {
@@ -35,6 +37,11 @@ nav ul#menu_pag {
 
 nav ul li {
     padding: 10px 25px 10px 0px;
+    transition: text-shadow 0s;
+}
+
+nav ul li:hover{
+    text-shadow: 0 0 10px white;
 }
 
 /*------------------------------------------------------*/
@@ -47,6 +54,7 @@ footer{
 
 footer ul#infos{
     padding: 30px;
+    margin-bottom: 0;
     list-style: none;
     background-color: #6a5345;
     color: white;
@@ -81,6 +89,63 @@ footer ul#infos li#l3{
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+}
+
+@media(max-width:1136px){
+    header div#title_string h1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    header img{
+        margin: 0px auto;
+        border-right: 0;
+    }
+
+    footer ul i{
+        padding: 10px;
+    }
+
+}
+
+@media(max-width: 600px){
+    header div#title_string h1{
+        font-size: 40pt;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    header img{
+        border: none;
+        margin: 0px auto;
+        width: 500px;
+    }
+
+    nav ul#menu_pag{
+        height: 80px;
+    }
+
+    nav ul#menu_pag li{
+        font-size: 24pt;
+    }
+
+    footer {
+        margin-top: 10px;
+        border-width: 10px;
+    }
+
+    footer ul#infos{
+        grid-template-columns: 1fr 10fr 10fr;
+    }
+
+    footer ul#infos i{
+        font-size: 40pt;
+        padding: 10px
+    }
+
+    footer ul#infos li{
+        font-size: 22pt;
+    }
 }
 
 /*------------------------------------------------------*/

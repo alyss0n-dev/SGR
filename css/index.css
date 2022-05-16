@@ -4,13 +4,13 @@ section {
 
 section h2 {
     font-size: 30pt;
-    text-align: justify;
+    text-align: left;
     padding-left: 50pt;
     padding-top: 30pt;
     padding-bottom: 10pt;
 }
 
-section h2 span{
+section h2 div span{
     border-bottom: 10px solid orange;
     padding-bottom: 5px;
 }
@@ -36,4 +36,27 @@ section table tr#title_table{
 
 section table tr td{
     background-color: none;
+}
+
+@media (max-width:672px){
+    section h2 div span{
+        border:none;
+    }
+
+    section h2 div{
+        border-bottom: 10px solid orange;
+    }
+
+    section h2{
+        padding: 15px 10px;
+    }
+
+    section table tr{
+        grid-template-columns: 1fr 3fr;
+        height: 100%;
+    }
+
+    section table tr td {
+        font-size: 20pt;
+    }
 }
