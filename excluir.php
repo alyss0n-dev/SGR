@@ -10,10 +10,10 @@ if(!isset($_GET['id']) or !is_numeric($_GET['id'])){
   exit;
 }
 
-//CONSULTA A VAGA
+//CONSULTAR O RAMAL
 $obRamal = Ramal::getRamal($_GET['id']);
 
-//VALIDAÇÃO DA VAGA
+//VALIDAÇÃO DO RAMAL
 if(!$obRamal instanceof Ramal){
   header('location: index.php?status=error');
   exit;
