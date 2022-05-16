@@ -16,7 +16,6 @@
   $resultados = '';
   foreach($ramais as $ramal){
     $resultados .= '<tr>
-                      <td>'.$ramal->id.'</td>
                       <td>'.$ramal->num_ramal.'</td>
                       <td>'.$ramal->loc_ramal.'</td>
                     </tr>';
@@ -36,16 +35,15 @@
 
   <section>
     <a href="cadastrar.php">
-      <button class="btn btn-success">Novo Ramal</button>
+      <button class="botoes">Cadastrar Ramal</button>
     </a>
   </section>
 
   <section>
 
-    <table class="table bg-light mt-3">
+    <table class="table">
         <thead>
           <tr>
-            <th>ID</th>
             <th>Número</th>
             <th>Localização</th>
           </tr>

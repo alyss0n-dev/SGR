@@ -40,7 +40,7 @@ class ramal {
     }
 
     /**
-     * Método responsável por excluir a vaga do banco
+     * Método responsável por excluir o ramal do banco
      * @return boolean
     */
   public function excluir(){
@@ -48,7 +48,7 @@ class ramal {
   }
 
     /**
-     * Método responsável por atualizar a vaga no banco
+     * Método responsável por atualizar o ramal no banco
      * @return boolean
      */
   public function atualizar(){
@@ -72,7 +72,7 @@ class ramal {
     }
 
     /**
-     * Método responsável por buscar uma vaga com base em seu ID
+     * Método responsável por buscar o ramal com base em seu ID
      * @param  integer $id
      * @return Ramal
      */
