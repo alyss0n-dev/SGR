@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastrar.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Cadastrar Ramal</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Prefeitura_Gravatá">
+        <div id="title_string">
+            <h1>Coordenação de tecnologia da informação</h1>
+        </div>
+    </header>
+    <nav>
+        <ul id="menu_pag">
+            <li>Home</li>
+            <li>Cadastrar</li>
+        </ul>
+    </nav>
+    <form action="cadastrar.php" method="post">
+        <span >Digite a numeração do novo Ramal: 
+        </span>
+        <input id="num" type="number" name="num_ramal">
+        <br>
+        <span id="second">Digite a localização do Ramal: </span>
+        <input id="loc" type="text" name="loc_ramal"><br>
+        <input id="botao" class="btn btn-success" type="button" value="Cadastrar">
+    </form>
+    <footer>
+        <ul id="infos">
+            <i class="fa-solid fa-phone"></i><li id="l1">Coordenação (Ramal 1013)</li>
+            <i class="fa-solid fa-phone"></i><li id="l2">Suporte e Manutenção (Ramal 1014)</li>
+            <i class="fa-solid fa-at"></i><li id="l3">ti@prefeituradegravata.pe.gov.br</li>
+        </ul>
+    </footer>
+</body>
+</html>
